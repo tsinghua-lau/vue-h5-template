@@ -11,5 +11,6 @@ module.exports = {
       'libraryName': 'mint-ui',
       'style': true
     }]
-  ]
+  ],
+  sourceType: 'unambiguous'
 }
