@@ -1,8 +1,3 @@
-/**
- * @description: 路由
- * @author: nowThen
- */
-
 import Vue from 'vue';
 import Router from 'vue-router';
 

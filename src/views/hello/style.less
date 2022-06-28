@@ -1,97 +1,506 @@
 
-.page-hello {
-  position: absolute;
+@font-face {
+  font-family: "title"; // 定义的字体名字
+  src: url("./font/title.TTF"); 
+  font-weight: normal;
+  font-style: normal;
+}
+#box{
   width: 100%;
-  height: 100%;
-  .page-content {
-    padding: 10px;
-    background: @colorBg;
-  }
-  .msg-area {
-    background: #fff;
+  height: fit-content;
+  background: #f7f7f7;
+  padding-bottom: 20px;
+}
+.zll {
+  background: #fff;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 10px;
+  
+  display: flex;
+  .left{
+    position: relative;
+    width: 50%;
+    .title{
+    font-family: 'title';
+      margin-top: 8%;
+      margin-left: 8%;
+      font-weight: 600;
+      font-size: 18px
+    }
+    #jd{
+      width: 93%;
+      height: 82%;
+      // background: pink;
+      margin-bottom: 8%;
+      margin-left: 5%;
+    }
+    .po{
+      position: absolute;
+      left: 53px;
+      top:74px;
+      .top{
+        display: flex;
+        .name{
+          font-size: 12px;
+        }
+        .logo{
+          img{
+            width: 17px;
+            margin-left: 2px;
+            margin-right: 4px;
+            
+          }
+        }
+        .value{
+          font-size: 12px;
+        }
+      }
+      .bot{
+        display: flex;
+        .name{
+          font-size: 12px;
+        }
+        .logo{
+          img{
+            width: 17px;
+            margin-left: 2px;
+            margin-right: 4px;
+          }
+        }
+        .value{
+          font-size: 12px;
+        }
+      }
+    }
+  } 
+  .right{
+    width: 50%;
+    .top{
+      display: flex;
+      margin-top: 22%;
+      .logo{
+        box-shadow: 1px 0px 5px 2px #bcb0b0;
+        height: 35px;
+        border-radius: 4px;
+        width: 35px;
+        text-align: center;
+        img{
+          padding: 3px;
     border-radius: 4px;
-    box-shadow: 0 0 4px 0px rgba(128, 100, 100, 0.2);
+          width: 28px;
+          height: 31px;
+          padding: 2px;
+        }
+      }
+      .content{
+        .title{
+          margin-left: 10px;
+    font-weight: 600;
+        }
+        .num{
+          margin-top: 10%;
+          margin-left: 10px;
+          span{
+            color:#0091fe;
+            font-weight: 600;
 
-  }
-  .msg-title {
-    font-size: 24px;
-    padding: 10px;
-  }
-  .user-desc {
-    padding: 10px;
-  }
-  .icons-link {
-    color: @colorBlueMain;
-    margin: 10px 0;
-    .iconfont {
-      font-size: 20px;
-      padding-right: 20px;
+          }
+          i{
+
+          }
+        }
+      }
     }
-    .iconRN-edit {
-      color: #f8774b;
+    .bot{
+      display: flex;
+      margin-top: 12%;
+
+      .logo{
+        box-shadow: 1px 0px 5px 2px #bcb0b0;
+        height: 35px;
+        border-radius: 4px;
+        width: 35px;
+        text-align: center;
+        img{
+          padding: 3px;
+       border-radius: 4px;
+          width: 28px;
+          height: 31px;
+          padding: 2px;
+        }
+      }
+      .content{
+        .title{
+          margin-left: 10px;
+          font-weight: 600;
+        }
+        .num{
+          margin-top: 10%;
+          margin-left: 10px;
+          span{
+              color:#0ccacf;
+          font-weight: 600;
+
+          }
+          i{
+            
+          }
+        }
+      }
     }
-    .iconRN-yuque {
-      color: #60d27d;
+  } 
+}
+
+.sjll{
+  display: flex;
+  background: #fff;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 10px;
+  .left{
+    width: 50%;
+
+    .title{
+      font-family: 'title';
+      margin-top: 8%;
+      margin-left: 8%;
+      font-weight: 600;
+      font-size: 18px
     }
-    .iconRN-git {
-      color: #424242;
-    }
-    .iconRN-juejin {
-      color: #49b2f5;
+    .contetnt{
+      display: flex;
+      margin-left: 8%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      .logo{
+        img{
+          width: 38px;
+          height: 29px;
+
+        }
+      }
+      .name{
+        margin-left: 3px;
+        width: 45px;
+        margin-top: 8px;
+      }
+      .num{
+        font-weight: 600;
+        margin-top: 8px;
+
+      }
     }
   }
-  .app-name {
-    font-size: 20px;
-    font-weight: 500;
-    padding-bottom: 8px;
+  .right{
+    width: 50%;
+    .title{
+      font-weight: 600;
+      margin-top: 8%;
+      font-weight: 600;
+    }
+    display:flex;
+    .contetnt{
+      display: flex;
+      margin-left: 8%;
+      margin-top: 21%;
+      
+      .logo{
+        
+        img{
+          width: 37px;
+    height: 30px;
+        }
+      }
+      .name{
+        margin-left: 3px;
+        margin-top: 8px;
+        width: 60px;
+        width: 41px;
+      }
+      .num{
+        margin-top: 8px;
+        font-weight: 600;
+      }
+    }
   }
-  .iconRN-recommend {
-    font-size: 24px;
-    color: @colorRed;
+}
+
+.zsdb{
+  background: #fff;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  .title{
+    font-family: 'title';
+  
+    font-weight: 600;
+    position: absolute;
+    top: 14px;
+    left: 17px;
   }
-  .time-area {
-    padding: 20px 0 10px;
-    font-weight: bold;
-    .time {
-      font-weight: normal;
-      color: @colorBlueText;
+  #echarts-db{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.kcll,.hcll{
+  background: #fff;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  .title{
+    font-family: 'title';
+    padding-top: 3%;
+    margin-left: 8%;
+    font-weight: 600;
+    font-size: 18px
+  }
+  .tj{
+    display: flex;
+    width: 100%;
+    .left{
+      display: flex;
+          margin-top: 4%;
+    margin-left: 16px;
+    padding: 17px;
+    background: #f8f9fb;
+
+      .logo{
+        margin-top: 3px;
+        img{
+
+        }
+      }
+      .content{
+        .title{
+          margin-left: 10px;
+    font-weight: 600;
+    font-family: auto;
+        }
+        .num{
+          margin-top: 10%;
+          margin-left: 10px;
+          span{
+            color:#0091fe;
+            font-weight: 600;
+
+          }
+          i{
+
+          }
+        }
+      }
+    }
+    .right{
+      background: #f8f9fb;
+      display: flex;
+      margin-top: 4%;
+      padding: 17px;
+      margin-left: 8px;
+      .logo{
+        margin-top: 3px;
+
+        img{
+
+        }
+      }
+      .content{
+        .title{
+          margin-left: 10px;
+          font-weight: 600;
+          font-family: auto;
+
+        }
+        .num{
+          margin-top: 10%;
+          margin-left: 10px;
+          span{
+              color:#0ccacf;
+          font-weight: 600;
+
+          }
+          i{
+            
+          }
+        }
+      }
+    }
+  }
+  .list{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    .item{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 25px;
+      border-bottom: 1px solid #eee;
+      margin-top: 5px;
+      .label{
+        margin-top: 2px;
+      }
+      .num{
+        font-weight: 600;
+      }
+      .pr{
+        font-weight: 600;
+      }
+    }
+  }
+  .thb{
+    display: flex;
+    width: 93%;
+    background: #eee;
+    height: 56px;
+    border-radius: 5px;
+    line-height: 56px;
+    margin-top: 10px;
+    margin-left: 3%;
+    .left{
+      width: 48%;
+      display: flex;
+      justify-content: center;
+      .name{
+
+      }
+      .logo{
+        padding-top: 7px;
+        img{
+          margin-bottom: 5px;
+          margin-left: 6px;
+          margin-right: 10px;
+        }
+      }
+      .value{
+        color: #00984e;
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+    .center{
+    
+      width: 1px;
+      height: 37%;
+      margin-top: 5%;
+      background: #d2c3c3;
+    }
+    .right{
+      width: 48%;
+      justify-content: center;
+
+      display: flex;
+
+      .name{
+
+      }
+      .logo{
+        padding-top: 7px;
+        img{
+          margin-bottom: 5px;
+          margin-left: 6px;
+          margin-right: 10px;
+        }
+      }
+      .value{
+        color: #ee0a32;
+        font-weight: 600;
+        font-size: 17px;
+      }
     }
   }
 
-  .urls-area {
-    text-align: left;
-    .title {
-      font-size: 18px;
-      padding: 10px;
-      font-weight: bold;
-    }
-  }
-  .list-ul {
-    margin-left: 20px;
-    padding: 10px;
-    list-style: circle;
-    .list-li {
-      margin-bottom: 10px;
-    }
-    .url-link {
-      color: @colorBlueLight;
-      padding: 1px;
-      font-size: 16px;
-      border-bottom: 1px solid #7cd67c;
-    }
-  }
+}
 
-  .user-img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    // background: url("~@/assets/images/cat.png");
-    background-size: contain;
-    margin: 20px auto;
-    box-shadow: 0 0 8px 1px #cfa3ef;
-    transition: transform 10s;
-    &:hover {
-      transform: rotate(6turn);
+.llpm{
+  background: #fff;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  .title{
+    font-family: 'title';
+    padding-top: 3%;
+    padding-left: 5%;
+    font-weight: 600;
+    font-size: 18px
+  }
+  .content{
+    width: 100%;
+    .item{
+      margin-top: 12px;
+      position: relative;
+      display: flex;
+      .xh{
+        height: 21px;
+        margin-left: 18px;
+        width: 21px;
+        border-radius: 32px;
+        line-height: 21px;
+        box-sizing: border-box;
+        background: #e6edff;
+        text-align: center;
+      }
+      .name{
+        width: 30%;
+        padding-right: 5px;
+        padding-left: 10px;
+      }
+      .pr{
+        width: 55%;
+        height: 10px;
+        margin-top: 5px;
+        position: relative;
+        background: #d3ddf8;
+        border-radius: 10px;
+        .jd{
+          height: 100%;
+          background:#00baf2;
+          border-radius: 10px;
+
+        }
+        .num{
+          position: absolute;
+          font-size: 14px;
+          top: -17px;
+          color: #b5c4d3;
+          right: 0;
+        }
+        .logo{
+          position: absolute;
+          font-size: 12px;
+          top: -13px;
+          color: #b5c4d3;
+          right: 31%;
+          display: flex;
+          
+          span{
+            display: inline-block;
+            width:15px;
+            height: 15px;
+            img{
+              width: 9px;
+              height: 9px;
+            }
+            .num{
+              color: #f66c87;
+            }
+          }
+          i{
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 }

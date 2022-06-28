@@ -6,13 +6,18 @@ import store from './stores';
 import * as filters from './filters/';
 // import './services';
 import 'lib-flexible';
-
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
 import './styles/main.less';
+
+import * as echarts from 'echarts'
+Vue.prototype.$echarts = echarts
+
+Vue.use(ElementUI);
 
 import FastClick from 'fastclick';
 
 FastClick.attach(document.body);
-
 Vue.config.errorHandler = (err, vm, info) => {
   console.error(err);
 };
