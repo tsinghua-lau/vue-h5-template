@@ -375,7 +375,7 @@ export default {
               fontSize: 12,
               color: "#000",
             },
-            top: "5%",
+            top: "6%",
             left: "80%",
             data: [
               {
@@ -392,7 +392,7 @@ export default {
               fontSize: 12,
               color: "#000",
             },
-            top: "5%",
+            top: "6%",
             left: "65%",
             data: [
               {
