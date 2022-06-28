@@ -23,7 +23,7 @@
 ## 构建命令
 ### 克隆项目
 ```
-git clone git@github.com:now1then/vue-h5-pro.git
+git clone git@github.com:tsinghua-lau/vue-h5-template.git
 ```
 
 ### 初始化依赖配置
