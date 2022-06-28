@@ -355,10 +355,35 @@ export default {
         // ],
         xAxis: {
           type: "category",
+          	axisTick: {
+              show: false
+            },
+            axisLine:{
+              lineStyle:{
+                color:"#6986a2"//x轴轴线颜色
+              }
+				  },
+
           boundaryGap: false,
           data: ["1:00", "4:00", "8:00", "12:00", "16:00", "18:00", "24:00"],
         },
         legend: [
+           {
+            itemWidth: 10,
+            itemHeight: 10,
+            textStyle: {
+              fontSize: 12,
+              color: "#000",
+            },
+            top: "5%",
+            left: "80%",
+            data: [
+              {
+                name: "今日",
+                icon: "rect",
+              },
+            ], //rect为矩形
+          },
           {
             itemWidth: 10,
             itemHeight: 10,
@@ -376,26 +401,15 @@ export default {
               },
             ], //rect为矩形
           },
-          {
-            itemWidth: 10,
-            itemHeight: 10,
-            textStyle: {
-              color: "#4276aa",
-              fontSize: 12,
-              color: "#000",
-            },
-            top: "5%",
-            left: "80%",
-            data: [
-              {
-                name: "今日",
-                icon: "rect",
-              },
-            ], //rect为矩形
-          },
+         
         ],
         yAxis: {
           type: "value",
+            axisLine:{
+              lineStyle:{
+                color:"#6986a2"//x轴轴线颜色
+              }
+				  },
         },
         grid: {
           bottom: "10%",
@@ -403,7 +417,7 @@ export default {
         },
         series: [
           {
-            data: [5, 15, 5, 15, 5, 15, 5],
+            data: [5, 12, 7, 14, 8, 11, 9],
             type: "line",
             symbol: "none",
             smooth: true,
@@ -426,7 +440,7 @@ export default {
                   },
                   {
                     offset: 1,
-                    color: "#d8f6ff",
+                    color: "#ecfaff",
                   },
                 ],
                 global: false,
@@ -434,7 +448,7 @@ export default {
             },
           },
           {
-            data: [15, 5, 15, 5, 15, 5, 15],
+            data: [12, 4, 14, 5, 13, 4, 14],
             type: "line",
             symbol: "none",
             smooth: true,
@@ -457,7 +471,7 @@ export default {
                   },
                   {
                     offset: 1,
-                    color: "#e3f9ff",
+                    color: "#ecfaff",
                   },
                 ],
                 global: false,
